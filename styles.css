@@ -186,11 +186,8 @@ a:hover {
   border-radius: 50%;
   background: var(--bg-alt);
   border: 3px solid var(--accent);
-  display: grid;
-  place-items: center;
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--accent);
+  object-fit: cover;
+  object-position: center 30%;
   justify-self: center;
 }
 

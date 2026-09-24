@@ -16,7 +16,7 @@ python -m http.server 8000
 
 - **Content:** edit the text in `index.html` (hero, about, skills, projects, experience, contact links).
 - **Colors:** change the variables at the top of `styles.css`.
-- **Photo:** replace the `.avatar` div with an `<img>` if you want a profile picture.
+- **Photo:** replace `images/headshot.jpg` to change the profile picture.
 
 ## Deploy
 
