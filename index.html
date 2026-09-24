@@ -3,170 +3,389 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adit Sangani — Portfolio</title>
-  <meta name="description" content="Personal portfolio of Adit Sangani." />
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <meta name="theme-color" content="#080e24" />
+  <title>Adit Sangani — CS, Data &amp; AI</title>
+  <meta name="description" content="Adit Sangani is a University of Florida computer science student building with data and AI. Projects, experience, and hackathon work." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230021a5'/%3E%3Ctext x='10' y='44' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='white'%3Eas%3C/text%3E%3Ccircle cx='52' cy='40' r='5' fill='%23fa4616'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=5" />
+  <script src="script.js?v=5" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <nav class="nav container">
-      <a href="#top" class="logo">AS</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="Adit Sangani, home">
+        <span class="monogram">as<span>.</span></span>
+        <span class="wordmark-name">Adit Sangani</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">
+        <span>Menu</span><span class="menu-lines" aria-hidden="true"></span>
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-contact">Let’s connect <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
   </header>
 
-  <main id="top">
+  <main id="main">
     <!-- Hero -->
-    <section class="hero container">
-      <p class="eyebrow">Hi, my name is</p>
-      <h1>Adit Sangani.</h1>
-      <h2 class="subtitle">I build things for the web.</h2>
-      <p class="lead">
-        I'm a developer who enjoys turning ideas into clean, useful software.
-        This is a short intro — replace it with a sentence or two about what you do and what you're looking for.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn">View my work</a>
-        <a href="#contact" class="btn btn-outline">Get in touch</a>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div>
-          <p>
-            Write a few sentences about yourself here: your background, what you're studying or working on,
-            and what gets you excited about building software.
+    <div class="hero-stage">
+      <section class="hero container" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/adit-sangani/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/aditsangani" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="eyebrow"><span class="short-line" aria-hidden="true"></span> DATA, AI &amp; SOFTWARE</p>
+          <h1 id="hero-title">Adit<br /><em>Sangani.</em></h1>
+          <p class="hero-tagline">I turn data and AI into tools people actually use.</p>
+          <p class="hero-description">
+            Computer Science at the University of Florida, with an AI Fundamentals certificate.
+            I build full-stack apps, data pipelines, and hackathon projects that solve real problems.
           </p>
-          <p>
-            Add a second paragraph with something more personal — interests, hobbies, or what you're learning right now.
-          </p>
+          <div class="hero-actions">
+            <a class="button" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <img class="avatar" src="images/headshot.jpg" alt="Headshot of Adit Sangani" />
+
+        <div class="hero-visual">
+          <figure class="portrait">
+            <img src="images/headshot.jpg" alt="Adit Sangani smiling in a navy suit on a tree-lined path" width="667" height="1000" />
+            <figcaption>
+              <span class="portrait-label">UNIVERSITY OF FLORIDA</span>
+              <span class="portrait-title">Go Gators. <span class="caption-star" aria-hidden="true">✳</span></span>
+            </figcaption>
+          </figure>
+          <span class="portrait-side-note" aria-hidden="true">DATA · AI · SOFTWARE · REPEAT</span>
+        </div>
+
+        <div class="hero-proof">
+          <span><strong>UF Computer Science</strong> Class of 2028 · 3.87 GPA</span>
+          <span><strong>HackaBull VII</strong> 1st place · PostureGuard</span>
+          <span><strong>FBLA Florida SLC</strong> 1st place · CS Fundamentals</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- Work -->
+    <section class="section container" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / SELECTED WORK</p>
+          <h2 id="work-title">Built to be <em>useful.</em></h2>
+        </div>
+        <p>Hackathon wins, health tech, and tools that help people build better habits.</p>
       </div>
-    </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section container">
-      <h2 class="section-title">Skills</h2>
-      <ul class="skills-list">
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>Python</li>
-        <li>HTML &amp; CSS</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>SQL</li>
-        <li>Git</li>
-      </ul>
-    </section>
+      <article class="featured-project" data-spotlight>
+        <div class="featured-content">
+          <span class="award-label">★ HACKABULL VII · 1ST PLACE OF 200</span>
+          <h3>PostureGuard<span class="orange-dot">.</span></h3>
+          <p class="featured-subtitle">Better posture, without sending your camera feed anywhere.</p>
+          <p>
+            A Chrome and Edge extension built with a four-person team. It uses MediaPipe pose estimation to catch
+            “tech neck” in real time, then coaches you back with alerts, streaks, and a short reset routine.
+          </p>
+          <div class="tags"><span>React</span><span>Vite</span><span>Tailwind CSS</span><span>MediaPipe</span></div>
+          <div class="project-links">
+            <a class="project-link" href="https://devpost.com/software/posture-guard-0e57p6" target="_blank" rel="noopener noreferrer">Devpost <span aria-hidden="true">↗</span></a>
+            <a class="project-link" href="https://github.com/aditsangani/Final-Hackabull-VII-Project" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
 
-    <!-- Projects -->
-    <section id="projects" class="section container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <article class="card">
+        <div class="featured-evidence">
+          <p class="eyebrow">WHY IT WON</p>
+          <div class="project-stat">
+            <strong>1st <span>of 200 participants</span></strong>
+            <p>First place overall at HackaBull VII, April 2026.</p>
+          </div>
+          <div class="project-stat">
+            <strong>0 <span>frames leave your device</span></strong>
+            <p>All inference runs locally in the browser, with a personalized baseline calibration.</p>
+          </div>
+        </div>
+
+        <details class="project-details featured-details">
+          <summary>How it works <span class="detail-symbol" aria-hidden="true">+</span></summary>
+          <div class="details-body">
+            <p>
+              MediaPipe returns landmarks for the body; PostureGuard uses the ear, shoulder, and hip points and a custom
+              angle calculation to measure how far your head drifts forward. A short calibration sets your personal
+              baseline, so alerts fit your body instead of a generic threshold.
+            </p>
+            <p>
+              After extended poor posture it nudges you with a notification and a guided reset. A dashboard tracks
+              hourly posture scores and fatigue patterns, and streaks and achievements keep the habit going.
+            </p>
+          </div>
+        </details>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card neuro-card" data-spotlight>
+          <div class="card-top"><span class="project-category">HEALTH TECH · BAY HACKS</span><span class="project-year">2026</span></div>
+          <div class="project-mark signals-mark" aria-hidden="true">
+            <span>face</span><span>pulse</span><span>voice</span>
+            <em>→ risk score</em>
+          </div>
           <h3>NeuroTriage</h3>
-          <p>
-            Built at Bay Hacks 2026. At-home monitoring for post-stroke and neuromuscular recovery that combines
-            facial asymmetry tracking, webcam pulse and breathing estimates, and voice fluency check-ins into a
-            risk score shown on a clinician dashboard.
-          </p>
-          <ul class="tags"><li>Python</li><li>JavaScript</li><li>MediaPipe</li><li>ElevenLabs</li><li>Supabase</li></ul>
-          <div class="card-links">
-            <a href="https://github.com/aditsangani/Bay_Hacks_2026" target="_blank" rel="noopener">Code</a>
-          </div>
+          <p>At-home check-ins for post-stroke and neuromuscular recovery, surfaced on a clinician dashboard.</p>
+          <div class="tags"><span>Python</span><span>JavaScript</span><span>MediaPipe</span><span>ElevenLabs</span><span>Supabase</span></div>
+          <details class="project-details">
+            <summary>View project details <span class="detail-symbol" aria-hidden="true">+</span></summary>
+            <div class="details-body">
+              <p>
+                Combines facial asymmetry tracking, experimental webcam estimates of pulse and breathing, and voice
+                fluency check-ins into a weighted risk score, with de-identified telemetry designed around HIPAA principles.
+              </p>
+              <p><a class="inline-link" href="https://github.com/aditsangani/Bay_Hacks_2026" target="_blank" rel="noopener noreferrer">View the code ↗</a></p>
+            </div>
+          </details>
         </article>
-        <article class="card">
-          <h3>PostureGuard</h3>
-          <p>
-            1st place at HackaBull VII out of 200 participants. A Chrome and Edge extension that uses your webcam and MediaPipe pose
-            estimation to catch "tech neck" in real time, with personalized calibration, posture analytics, and streaks
-            to build better habits. All processing stays on-device.
-          </p>
-          <ul class="tags"><li>React</li><li>Vite</li><li>Tailwind CSS</li><li>MediaPipe</li></ul>
-          <div class="card-links">
-            <a href="https://github.com/aditsangani/Final-Hackabull-VII-Project" target="_blank" rel="noopener">Code</a>
-            <a href="https://devpost.com/software/posture-guard-0e57p6" target="_blank" rel="noopener">Devpost</a>
+
+        <article class="project-card eco-card" data-spotlight>
+          <div class="card-top"><span class="project-category">SUSTAINABILITY · CODE4CHANGE</span><span class="project-year">2026</span></div>
+          <div class="project-mark metric-mark" aria-hidden="true">
+            <strong>CO<sub>2</sub>e<span>↓</span></strong>
+            <span>WEEKLY FOOTPRINT</span>
           </div>
-        </article>
-        <article class="card">
           <h3>EcoImpact Tracker</h3>
-          <p>
-            Built at SHPE's Code4Change 2026. A Flask web app that estimates your weekly carbon footprint from driving,
-            diet, electricity, and flights, then gives a sustainability score, a top-3 action plan with estimated savings,
-            and a what-if simulator for lifestyle changes.
-          </p>
-          <ul class="tags"><li>Python</li><li>Flask</li><li>JavaScript</li><li>REST API</li></ul>
-          <div class="card-links">
-            <a href="https://github.com/aditsangani/Code4Change-SHPE-2026" target="_blank" rel="noopener">Code</a>
+          <p>Estimates your weekly carbon footprint and turns it into a sustainability score and an action plan.</p>
+          <div class="tags"><span>Python</span><span>Flask</span><span>JavaScript</span><span>REST API</span></div>
+          <details class="project-details">
+            <summary>View project details <span class="detail-symbol" aria-hidden="true">+</span></summary>
+            <div class="details-body">
+              <p>
+                Built at SHPE’s Code4Change 2026. Calculates CO2e from driving, diet, electricity, and flights, then
+                gives a 0–100 score, a top-3 action plan with estimated savings, and a what-if simulator. Also exposes
+                JSON API endpoints and ships with unit tests.
+              </p>
+              <p><a class="inline-link" href="https://github.com/aditsangani/Code4Change-SHPE-2026" target="_blank" rel="noopener noreferrer">View the code ↗</a></p>
+            </div>
+          </details>
+        </article>
+
+        <article class="project-card osc-card" data-spotlight>
+          <div class="card-top"><span class="project-category">FULL-STACK · OPEN SOURCE CLUB</span><span class="project-year">2025–26</span></div>
+          <div class="project-mark code-mark" aria-hidden="true">
+            <span>{</span> offline: <b>true</b> <span>}</span>
           </div>
+          <h3>OSC Workout App</h3>
+          <p>A workout day planner PWA, built by a 10+ person team I led through Open Source Club.</p>
+          <div class="tags"><span>React</span><span>JavaScript</span><span>PWA</span><span>Google Calendar API</span></div>
+          <details class="project-details">
+            <summary>View project details <span class="detail-symbol" aria-hidden="true">+</span></summary>
+            <div class="details-body">
+              <p>
+                Integrated the Google Calendar REST API for scheduling and built dynamic workout visualization in React.
+                Configured service workers and caching for offline access, and managed pull requests and code reviews.
+              </p>
+              <p><a class="inline-link" href="https://github.com/aditsangani/OSC_Workout_App" target="_blank" rel="noopener noreferrer">View the code ↗</a></p>
+            </div>
+          </details>
         </article>
       </div>
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="section container">
-      <h2 class="section-title">Experience</h2>
-      <ol class="timeline">
-        <li>
-          <div class="timeline-meta">May 2026 — August 2026 · Tampa, FL</div>
-          <h3>Data Science &amp; AI Intern · BlueNet Technologies</h3>
-          <ul>
-            <li>Designed and built ETL pipelines automating data integration across enterprise systems (ThoughtSpot, ConnectWise), replacing manual reporting workflows.</li>
-            <li>Created a 2x more efficient automated invoice processor with a Python script using Claude Code.</li>
-            <li>Automated email reminders with Power Automate, saving 4 hrs/week of manual follow-up.</li>
-            <li>Applied data warehousing techniques in Microsoft Fabric, using SQL to transform CSV-sourced data.</li>
-            <li>Tuned ThoughtSpot's Spotter LLM to improve natural-language query parsing against client data models.</li>
-          </ul>
-        </li>
-        <li>
-          <div class="timeline-meta">April 2026 — Present · Gainesville, FL</div>
-          <h3>VP of External Affairs &amp; Competitor · Future Business Leaders of America</h3>
-          <ul>
-            <li>Spearheaded an outreach campaign targeting 50+ companies for partnerships and sponsorships.</li>
-            <li>Recruited 15+ new members through external channels and campus networking.</li>
-            <li>Placed 1st and 3rd at the FBLA Florida State Leadership Conference in Computer Science Fundamentals and the Technology &amp; CS Case Study Competition.</li>
-          </ul>
-        </li>
-        <li>
-          <div class="timeline-meta">September 2025 — April 2026 · Gainesville, FL</div>
-          <h3>Project Lead · Open Source Club (OSC Workout App)</h3>
-          <ul>
-            <li>Led a team of 10+ engineers to build a workout tracking app.</li>
-            <li>Built a full-stack React web app and PWA, integrating the Google Calendar REST API and configuring service workers for offline access.</li>
-            <li>Ran 2 meetings weekly for milestone checks, and managed pull requests and code reviews.</li>
-          </ul>
-        </li>
-      </ol>
+    <div class="experience-stage">
+      <section class="section container" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / EXPERIENCE</p>
+            <h2 id="experience-title">Learning by <em>shipping.</em></h2>
+          </div>
+          <p>Automating real workflows, leading teams, and competing.</p>
+        </div>
+
+        <div class="experience-row">
+          <div class="experience-meta">
+            <span class="experience-date">MAY — AUG 2026</span>
+            <h3>BlueNet Technologies</h3>
+            <p>Data Science &amp; AI Intern</p>
+            <span class="location-label">Tampa, Florida</span>
+          </div>
+          <div class="experience-body">
+            <h4>Replacing manual reporting with pipelines.</h4>
+            <ul>
+              <li>Designed and built <strong>ETL pipelines</strong> automating data integration across ThoughtSpot and ConnectWise.</li>
+              <li>Created a <strong>2x more efficient</strong> automated invoice processor in Python using Claude Code.</li>
+              <li>Automated email reminders with Power Automate, saving <strong>4 hrs/week</strong> of manual follow-up.</li>
+              <li>Applied data warehousing techniques in Microsoft Fabric, using SQL to transform CSV-sourced data.</li>
+              <li>Tuned ThoughtSpot’s Spotter LLM to better parse natural-language questions against client data models.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-row">
+          <div class="experience-meta">
+            <span class="experience-date">APR 2026 — PRESENT</span>
+            <h3>Future Business Leaders of America</h3>
+            <p>VP of External Affairs &amp; Competitor</p>
+            <span class="location-label">Gainesville, Florida</span>
+          </div>
+          <div class="experience-body">
+            <h4>Building partnerships. Winning at state.</h4>
+            <ul>
+              <li>Spearheaded an outreach campaign to <strong>50+ companies</strong> for partnerships and sponsorships.</li>
+              <li>Recruited <strong>15+ new members</strong> through external channels and campus networking.</li>
+              <li>Placed <strong>1st</strong> in Computer Science Fundamentals and <strong>3rd</strong> in the Technology &amp; CS Case Study at the FBLA Florida State Leadership Conference.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-row">
+          <div class="experience-meta">
+            <span class="experience-date">SEP 2025 — APR 2026</span>
+            <h3>Open Source Club</h3>
+            <p>Project Lead, OSC Workout App</p>
+            <span class="location-label">Gainesville, Florida</span>
+          </div>
+          <div class="experience-body">
+            <h4>Leading a team from idea to app.</h4>
+            <ul>
+              <li>Led a team of <strong>10+ engineers</strong> building a workout tracking app.</li>
+              <li>Built a full-stack React web app and PWA for consistent, offline-capable use.</li>
+              <li>Ran <strong>2 meetings weekly</strong> for milestone checks and delegating work.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Toolkit -->
+    <section class="section container" id="toolkit" aria-labelledby="toolkit-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">03 / MY TOOLKIT</p>
+          <h2 id="toolkit-title">What I <em>build with.</em></h2>
+        </div>
+        <p>Data and AI at the core. Full-stack engineering around it.</p>
+      </div>
+
+      <div class="toolkit-grid">
+        <div class="toolkit-group">
+          <span class="tool-number">01</span>
+          <h3>Languages</h3>
+          <p>Python · C/C++ · JavaScript · TypeScript · HTML/CSS · MATLAB · MySQL/MariaDB</p>
+        </div>
+        <div class="toolkit-group">
+          <span class="tool-number">02</span>
+          <h3>Frameworks</h3>
+          <p>React.js · Node.js · Flask · PyTorch · TensorFlow</p>
+        </div>
+        <div class="toolkit-group">
+          <span class="tool-number">03</span>
+          <h3>Data &amp; AI</h3>
+          <p>Pandas · NumPy · scikit-learn · Matplotlib · MediaPipe · Microsoft Fabric · Jupyter · ElevenLabs</p>
+        </div>
+        <div class="toolkit-group">
+          <span class="tool-number">04</span>
+          <h3>Tools</h3>
+          <p>Git · GitHub · VS Code · Claude Code · Power Automate · Figma · Jira · Confluence</p>
+        </div>
+      </div>
+
+      <div class="credentials">
+        <p class="eyebrow">RECOGNITION</p>
+        <div class="credential-list">
+          <div class="credential">
+            <span class="credential-icon" aria-hidden="true">1st</span>
+            <div>
+              <h3>HackaBull VII · PostureGuard</h3>
+              <p>First place of 200 participants · April 2026</p>
+            </div>
+          </div>
+          <div class="credential">
+            <span class="credential-icon alt-icon" aria-hidden="true">1st</span>
+            <div>
+              <h3>FBLA Florida State Leadership Conference</h3>
+              <p>1st, Computer Science Fundamentals · 3rd, Technology &amp; CS Case Study</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- About -->
+    <div class="about-stage">
+      <section class="section container about-layout" id="about" aria-labelledby="about-title">
+        <div class="about-copy">
+          <p class="eyebrow">04 / A LITTLE ABOUT ME</p>
+          <h2 id="about-title">Beyond the <em>code.</em></h2>
+          <p>
+            I’m Adit, a Computer Science student at the University of Florida working toward an AI
+            Fundamentals/Applications certificate. I like taking something manual and slow and turning it into
+            something automatic, whether that’s an ETL pipeline, a Chrome extension, or a hackathon prototype built
+            in a weekend.
+          </p>
+          <p>
+            Outside of class I lead projects at Open Source Club, compete and run outreach for FBLA, and tutor math.
+            I speak English and Gujarati natively and I’m working on my Spanish.
+          </p>
+          <div class="interest-tags">
+            <span>Hackathons</span><span>Math tutoring</span><span>English · Gujarati · Spanish</span><span>Go Gators!</span>
+          </div>
+        </div>
+
+        <aside class="education-panel" aria-label="Education">
+          <p class="eyebrow">ORANGE &amp; BLUE.</p>
+          <div class="education-entry">
+            <span class="school-mark" aria-hidden="true">UF</span>
+            <div>
+              <span class="education-date">EXPECTED MAY 2028</span>
+              <h3>University of Florida</h3>
+              <p>B.S. in Computer Science</p>
+              <p class="school-detail">3.87 GPA · AI Fundamentals/Applications Certificate</p>
+            </div>
+          </div>
+          <div class="coursework">
+            <h4>Relevant coursework</h4>
+            <p>Data Structures &amp; Algorithms · Computational Linear Algebra · AI Fundamentals · Database Systems · Business Analytics &amp; AI · Operating Systems · Software Engineering · Math for ML</p>
+          </div>
+        </aside>
+      </section>
+    </div>
 
     <!-- Contact -->
-    <section id="contact" class="section container contact">
-      <h2 class="section-title">Get In Touch</h2>
-      <p>I'm open to new opportunities and collaborations. Feel free to reach out!</p>
-      <a class="btn" href="mailto:apsangani3106@gmail.com">Say hello</a>
-      <p class="email"><a href="mailto:apsangani3106@gmail.com">apsangani3106@gmail.com</a></p>
-      <ul class="socials">
-        <li><a href="https://github.com/aditsangani" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/adit-sangani/" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
-    </section>
+    <div class="contact-stage">
+      <section class="container contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">05 / WHAT’S NEXT</p>
+          <h2 id="contact-title">Let’s build something <em>together.</em></h2>
+          <p>
+            I’m open to internships, collaborations, and interesting problems in data, AI, and software engineering.
+            Have something in mind? Reach out.
+          </p>
+          <a class="button" href="mailto:apsangani3106@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+          <a class="email-link" href="mailto:apsangani3106@gmail.com">apsangani3106@gmail.com</a>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/adit-sangani/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/aditsangani" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="contact-aside">
+          <span class="contact-monogram" aria-hidden="true">as<span>.</span></span>
+          <p>Curious builder. Data and AI by choice.</p>
+          <span class="contact-location">GAINESVILLE · TAMPA, FLORIDA</span>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer container">
     <p>&copy; <span id="year"></span> Adit Sangani</p>
+    <p>Built in orange and blue.</p>
+    <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
   </footer>
-
-  <script src="script.js?v=2"></script>
 </body>
 </html>
