@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adit Sangani — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Adit Sangani." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="logo">AS</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero container">
+      <p class="eyebrow">Hi, my name is</p>
+      <h1>Adit Sangani.</h1>
+      <h2 class="subtitle">I build things for the web.</h2>
+      <p class="lead">
+        I'm a developer who enjoys turning ideas into clean, useful software.
+        This is a short intro — replace it with a sentence or two about what you do and what you're looking for.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn">View my work</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            Write a few sentences about yourself here: your background, what you're studying or working on,
+            and what gets you excited about building software.
+          </p>
+          <p>
+            Add a second paragraph with something more personal — interests, hobbies, or what you're learning right now.
+          </p>
+        </div>
+        <div class="avatar" aria-hidden="true">AS</div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-list">
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>Python</li>
+        <li>HTML &amp; CSS</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>SQL</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>A short description of what this project does and the problem it solves.</p>
+          <ul class="tags"><li>React</li><li>Node.js</li></ul>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noopener">Code</a>
+            <a href="#" target="_blank" rel="noopener">Live</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>A short description of what this project does and the problem it solves.</p>
+          <ul class="tags"><li>Python</li><li>Flask</li></ul>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noopener">Code</a>
+            <a href="#" target="_blank" rel="noopener">Live</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>A short description of what this project does and the problem it solves.</p>
+          <ul class="tags"><li>JavaScript</li><li>CSS</li></ul>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noopener">Code</a>
+            <a href="#" target="_blank" rel="noopener">Live</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section container">
+      <h2 class="section-title">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="timeline-meta">2025 — Present</div>
+          <h3>Role Title · Company</h3>
+          <p>What you worked on and what you accomplished.</p>
+        </li>
+        <li>
+          <div class="timeline-meta">2024 — 2025</div>
+          <h3>Role Title · Company</h3>
+          <p>What you worked on and what you accomplished.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <p>I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+      <a class="btn" href="mailto:apsangani3106@gmail.com">Say hello</a>
+      <ul class="socials">
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Adit Sangani</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
