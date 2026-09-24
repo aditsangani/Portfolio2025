@@ -1,9 +1,10 @@
 :root {
-  --bg: #0f172a;
-  --bg-alt: #1e293b;
-  --text: #e2e8f0;
-  --muted: #94a3b8;
-  --accent: #38bdf8;
+  --bg: #00123a;
+  --bg-alt: #081a4f;
+  --blue: #0021a5; /* UF blue */
+  --text: #ffffff;
+  --muted: #b4c3e6;
+  --accent: #fa4616; /* UF orange */
   --radius: 10px;
   --max-width: 1000px;
 }
@@ -47,9 +48,9 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(0, 18, 58, 0.92);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--bg-alt);
+  border-bottom: 1px solid var(--blue);
 }
 
 .nav {
@@ -204,6 +205,7 @@ a:hover {
 .skills-list li {
   padding: 0.5rem 1rem;
   background: var(--bg-alt);
+  border: 1px solid var(--blue);
   border-radius: 999px;
 }
 
@@ -216,15 +218,17 @@ a:hover {
 
 .card {
   background: var(--bg-alt);
+  border: 1px solid var(--blue);
   border-radius: var(--radius);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
+  border-color: var(--accent);
 }
 
 .card h3 {
@@ -257,7 +261,7 @@ a:hover {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-left: 2px solid var(--bg-alt);
+  border-left: 2px solid var(--blue);
 }
 
 .timeline li {
@@ -320,7 +324,7 @@ a:hover {
   padding: 2rem 1rem;
   color: var(--muted);
   font-size: 0.9rem;
-  border-top: 1px solid var(--bg-alt);
+  border-top: 1px solid var(--blue);
 }
 
 /* Mobile */
@@ -338,7 +342,7 @@ a:hover {
     flex-direction: column;
     gap: 0;
     background: var(--bg);
-    border-bottom: 1px solid var(--bg-alt);
+    border-bottom: 1px solid var(--blue);
   }
 
   .nav-links.open {
