@@ -264,12 +264,12 @@ a:hover {
   border-left: 2px solid var(--blue);
 }
 
-.timeline li {
+.timeline > li {
   position: relative;
   padding: 0 0 2rem 1.5rem;
 }
 
-.timeline li::before {
+.timeline > li::before {
   content: "";
   position: absolute;
   left: -7px;
@@ -292,6 +292,16 @@ a:hover {
 .timeline p {
   color: var(--muted);
   margin: 0;
+}
+
+.timeline ul {
+  color: var(--muted);
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.timeline ul li {
+  margin-bottom: 0.35rem;
 }
 
 /* Contact */
