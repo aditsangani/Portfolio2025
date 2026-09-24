@@ -138,7 +138,7 @@ summary:focus-visible {
   font-size: 2.4rem;
   font-weight: 800;
   line-height: 1;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.04em;
 }
 
 .monogram span,
@@ -1195,7 +1195,7 @@ summary:focus-visible {
   font-size: 7.5rem;
   font-weight: 800;
   line-height: 1;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.05em;
   color: #ecefff;
 }
 
