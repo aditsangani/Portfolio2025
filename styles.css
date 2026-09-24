@@ -309,6 +309,10 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
+.contact .email {
+  margin: 1.25rem 0 0;
+}
+
 .socials {
   display: flex;
   justify-content: center;
