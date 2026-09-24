@@ -16,6 +16,7 @@ python -m http.server 8000
 
 - **Content:** edit the text in `index.html` (hero, about, skills, projects, experience, contact links).
 - **Colors:** change the variables at the top of `styles.css`.
+- **Cache busting:** after changing `styles.css` or `script.js`, bump the `?v=` number on their links in `index.html` so visitors get the new version.
 - **Photo:** replace `images/headshot.jpg` to change the profile picture.
 
 ## Deploy
